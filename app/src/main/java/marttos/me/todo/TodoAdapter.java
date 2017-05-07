@@ -60,7 +60,7 @@ public class TodoAdapter extends BaseAdapter
 
         Todo todo = getItem(position);
 
-        holder.complete.setText(todo.isComplete() ? "Finalizado" : "Pendente");
+        holder.complete.setText(todo.isComplete() ? "Completed" : "Pending");
         holder.task.setText(todo.getTask());
 
         return convertView;
